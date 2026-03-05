@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reginas Notizen</title>
+    <meta
+      name="description"
+      content="Ein persönlicher Blog mit kurzen Gedanken, Texten und Ideen."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Manrope:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav container">
+        <div class="logo">Reginas Notizen</div>
+        <a class="btn btn-nav" href="#beitraege">Lesen</a>
+      </nav>
+
+      <div class="hero-content container">
+        <p class="eyebrow">Persönlicher Blog</p>
+        <h1>Kleine Texte, große Gedanken.</h1>
+        <p class="lead">
+          Ein Ort für kurze Notizen, Erinnerungen und neue Ideen.
+        </p>
+        <a class="btn" href="#beitraege">Zu den Beiträgen</a>
+      </div>
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+    </header>
+
+    <main class="container">
+      <section class="intro-card">
+        <h2>Willkommen</h2>
+        <p>
+          Hier sammle ich Texte, die ich gerade schreibe oder schon früher
+          geschrieben habe. Kurz, ehrlich und direkt aus dem Alltag.
+        </p>
+      </section>
+
+      <section id="beitraege" class="posts-section">
+        <div class="section-head">
+          <h2>Beiträge</h2>
+          <input id="searchInput" type="text" placeholder="Nach Texten suchen..." />
+        </div>
+
+        <div class="posts-grid" id="postsGrid">
+          <article class="post-card">
+            <p class="post-date">05. März 2026</p>
+            <h3>Der erste Eintrag</h3>
+            <p>
+              Heute beginnt mein Blog. Ich möchte hier kurze Gedanken und kleine
+              Geschichten sammeln, die sonst zu schnell verloren gehen.
+            </p>
+          </article>
+
+          <article class="post-card">
+            <p class="post-date">20. Februar 2026</p>
+            <h3>Morgens um sieben</h3>
+            <p>
+              Es gibt eine besondere Ruhe am frühen Morgen. Vielleicht mag ich
+              diese Stunde genau deshalb so sehr: Alles ist möglich.
+            </p>
+          </article>
+
+          <article class="post-card">
+            <p class="post-date">02. Januar 2026</p>
+            <h3>Neues Jahr, neuer Blick</h3>
+            <p>
+              Ich nehme mir dieses Jahr nicht vor, perfekt zu sein. Ich nehme mir
+              vor, dranzubleiben und Dinge fertigzumachen.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© 2026 Reginas Notizen</p>
+        <p>Mit Herz geschrieben.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
