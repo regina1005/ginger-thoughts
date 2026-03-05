@@ -1,0 +1,23 @@
+{
+  "name": "ginger-thoughts",
+  "version": "1.0.0",
+  "description": "Ginger Thoughts — Gedanken aus dem Alltag",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "dev": "npx @11ty/eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://x-access-token:ghs_fPgpsiVzXkb9vkaJMwRWEe1GnlGgTJ31mKe2@github.com/regina1005/ginger-thoughts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/regina1005/ginger-thoughts/issues"
+  },
+  "homepage": "https://github.com/regina1005/ginger-thoughts#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}

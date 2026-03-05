@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} — {{ site.title }}</title>
+  <meta name="description" content="{{ description or site.description }}">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container--wide">
+      <div class="site-brand">
+        <a href="/" style="display:flex;align-items:center;gap:1rem;">
+          <img src="/assets/images/profile.jpg" alt="{{ site.title }}" class="site-brand__image">
+          <span class="site-brand__text">
+            <span class="site-title">{{ site.title }}</span>
+            <span class="site-subtitle">{{ site.description }}</span>
+          </span>
+        </a>
+        <button class="nav-toggle" aria-label="Menü öffnen" onclick="document.querySelector('.site-nav').classList.toggle('is-open')">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="site-nav">
+        <a href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>Startseite</a>
+        <a href="/texte/"{% if page.url == "/texte/" %} aria-current="page"{% endif %}>Texte</a>
+        <a href="/ueber/"{% if page.url == "/ueber/" %} aria-current="page"{% endif %}>Über</a>
+        <a href="/kontakt/"{% if page.url == "/kontakt/" %} aria-current="page"{% endif %}>Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; {{ site.title }} 2026</p>
+    </div>
+  </footer>
+
+</body>
+</html>
