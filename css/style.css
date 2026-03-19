@@ -426,10 +426,11 @@ button, input { font: inherit; }
 
 .verse-line {
   margin: 0;
+  line-height: 1.45;
 }
 
 .verse-paragraph-break {
-  height: 1.6rem;
+  height: 2rem;
 }
 
 .post-footer {
