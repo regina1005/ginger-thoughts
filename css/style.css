@@ -386,9 +386,19 @@ button, input { font: inherit; }
   padding-bottom: 4rem;
 }
 
+.post-wrap-narrow {
+  width: min(calc(100% - 2rem), 680px);
+}
+
 .post-title {
   font-size: clamp(2.4rem, 6vw, 4.1rem);
   margin-bottom: 1rem;
+}
+
+.post-title-single-line {
+  font-size: clamp(1.4rem, 4.3vw, 3.1rem);
+  line-height: 1.1;
+  white-space: nowrap;
 }
 
 .post-meta-top {
@@ -418,8 +428,8 @@ button, input { font: inherit; }
   margin: 0;
 }
 
-.verse-break {
-  height: 1.35rem;
+.verse-paragraph-break {
+  height: 1.6rem;
 }
 
 .post-footer {
